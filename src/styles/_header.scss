@@ -1,16 +1,19 @@
 @use "variaveis";
 
 .header {
+  display: flex;
+  justify-content: center;
   position: sticky;
   top: 0;
   left: 0;
-  background-color: variaveis.$primaryColor;
+  height: 5em;
   color: variaveis.$secondaryColor;
+  background-color: variaveis.$primaryColor;
 
   &__container {
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 20px;
+    padding: 0px 2em;
     display: flex;
     justify-content: space-between; /* Mantém a imagem à esquerda e a lista à direita */
     align-items: center; /* Centraliza o conteúdo no eixo Y */
@@ -20,13 +23,12 @@
   &__links {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 1.5em;
   }
 
   img {
-    margin: 16px 0;
     max-width: 100%;
     height: auto;
-    width: 200px;
+    width: 13em;
   }
 }

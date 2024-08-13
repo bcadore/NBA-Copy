@@ -1,0 +1,18 @@
+@use "variaveis";
+
+.hero {
+  height: calc(100vh - 5em);
+  width: 100%;
+  background-image: url(../images/NBA-2K25-HOMEPAGE_DESKTOP.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__content {
+    position: absolute;
+    bottom: 7em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
