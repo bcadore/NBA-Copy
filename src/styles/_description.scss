@@ -1,0 +1,20 @@
+@use "variaveis";
+
+.description {
+    width: 100%;
+    background-image: url(../../dist/images/NBA2K-BLACK-COURT-BG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    &__content {
+        font-size: 1.5em;
+        font-family: "Oswald", sans-serif;
+        line-height: 1.15;
+        padding: 4em 3em;
+        color: variaveis.$secondaryColor;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+    }
+}
