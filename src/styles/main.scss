@@ -3,6 +3,37 @@
 @use "header";
 @use "hero";
 @use "description";
+@use "games";
+
+@mixin title($fontSize: 2.5em) {
+  font-size: $fontSize;
+  color: variaveis.$primaryColor;
+  text-transform: uppercase;
+}
+
+.section--title {
+  @include title;
+
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 1em;
+}
+
+.card--title {
+  @include title(2em);
+
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+
+.card--info {
+  @include title(2em);
+
+  color: variaveis.$tertiaryColor;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  cursor: pointer;
+}
 
 .button {
   padding: 5px 10px;
