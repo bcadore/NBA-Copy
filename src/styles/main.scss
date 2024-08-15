@@ -4,6 +4,7 @@
 @use "hero";
 @use "description";
 @use "games";
+@use "register";
 
 @mixin title($fontSize: 2.5em) {
   font-size: $fontSize;
@@ -33,6 +34,10 @@
   font-family: "Oswald", sans-serif;
   font-weight: lighter;
   cursor: pointer;
+}
+
+.register {
+  background-image: url(../../dist/images/NBA2K-FORM-BG.jpg);
 }
 
 .button {

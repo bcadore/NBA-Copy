@@ -103,5 +103,76 @@
         </div>
       </div>
     </section>
+    <section class="register">
+      <h2 class="section--title">Cadastre-se para receber o nosso boletim</h2>
+      <p>
+        Inscreva-se em nossa newsletter para receber notícias e mensagens
+        promocionais da 2K e todas as suas afiliadas.
+      </p>
+      <form action="#" method="POST" class="register__form">
+        <!-- Campo para o nome -->
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome completo"
+          required
+        />
+
+        <!-- Campo para o e-mail -->
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+        />
+
+        <!-- Campos para mês e ano de nascimento -->
+        <label for="mes">Mês de Nascimento:</label>
+        <select id="mes" name="mes" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="janeiro">Janeiro</option>
+          <option value="fevereiro">Fevereiro</option>
+          <option value="marco">Março</option>
+          <option value="abril">Abril</option>
+          <option value="maio">Maio</option>
+          <option value="junho">Junho</option>
+          <option value="julho">Julho</option>
+          <option value="agosto">Agosto</option>
+          <option value="setembro">Setembro</option>
+          <option value="outubro">Outubro</option>
+          <option value="novembro">Novembro</option>
+          <option value="dezembro">Dezembro</option>
+        </select>
+
+        <label for="ano">Ano de Nascimento:</label>
+        <input
+          type="number"
+          id="ano"
+          name="ano"
+          min="1900"
+          max="2024"
+          placeholder="Informe o ano de seu nascimento"
+          required
+        />
+
+        <!-- Campo para selecionar a região -->
+        <label for="regiao">Região:</label>
+        <select id="regiao" name="regiao" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="norte">Norte</option>
+          <option value="nordeste">Nordeste</option>
+          <option value="centro-oeste">Centro-Oeste</option>
+          <option value="sudeste">Sudeste</option>
+          <option value="sul">Sul</option>
+        </select>
+
+        <!-- Botão de envio -->
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
   </body>
 </html>
