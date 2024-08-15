@@ -1,0 +1,52 @@
+@use "variaveis";
+
+.pageFooter {
+  background-color: variaveis.$primaryColor;
+  text-align: center;
+
+  &__text {
+    max-width: 960px;
+    font-family: "Uniform", sans-serif;
+    font-size: 1.5em;
+    padding: 1em;
+    color: variaveis.$secondaryColor;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      margin: 2em 1em;
+    }
+
+    img {
+      max-width: 100%;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &__button {
+    font-family: "Oswald", sans-serif;
+    margin: 1em 0;
+    text-align: center;
+    border: none;
+    background-color: variaveis.$secondaryColor;
+    color: variaveis.$primaryColor;
+
+    select {
+      padding: 1em;
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

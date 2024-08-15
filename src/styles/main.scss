@@ -5,6 +5,7 @@
 @use "description";
 @use "games";
 @use "register";
+@use "footer";
 
 @mixin title($fontSize: 2.5em) {
   font-size: $fontSize;
